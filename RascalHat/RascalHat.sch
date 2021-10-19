@@ -714,16 +714,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 1800 5100 1750
 Wire Wire Line
-	850  1350 700  1350
-Wire Wire Line
-	700  1350 700  1750
-Wire Wire Line
-	700  1750 5000 1750
-Wire Wire Line
-	5000 1750 5000 1650
-Wire Wire Line
-	5000 1650 5100 1650
-Wire Wire Line
 	850  1550 5100 1550
 Wire Wire Line
 	850  1450 5100 1450
@@ -755,8 +745,6 @@ Wire Wire Line
 	4400 5650 6850 5650
 Wire Wire Line
 	6850 4450 6500 4450
-Wire Wire Line
-	6850 5650 6850 4450
 Connection ~ 7250 3950
 Connection ~ 7050 4050
 Wire Wire Line
@@ -878,9 +866,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 2850 4900 2850
 Wire Wire Line
-	7250 3950 7250 5850
-Wire Wire Line
-	7050 4050 7050 5950
+	7250 3950 7250 5050
 Wire Wire Line
 	850  4700 4400 4700
 Wire Wire Line
@@ -1601,4 +1587,88 @@ Wire Wire Line
 Wire Wire Line
 	3750 4450 4900 4450
 Connection ~ 3750 4450
+$Comp
+L Connector_Generic:Conn_01x07 L2
+U 1 1 61754839
+P 1800 1050
+F 0 "L2" H 1880 1092 50  0000 L CNN
+F 1 "Conn_01x07" H 1880 1001 50  0000 L CNN
+F 2 "" H 1800 1050 50  0001 C CNN
+F 3 "~" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensor_Motion:MPU-6050 U?
+U 1 1 6175D5AD
+P 8700 5250
+F 0 "U?" H 8700 4461 50  0000 C CNN
+F 1 "MPU-6050" H 8700 4370 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 8700 4450 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 8700 5100 50  0001 C CNN
+	1    8700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617691CA
+P 2000 1250
+F 0 "#PWR?" H 2000 1000 50  0001 C CNN
+F 1 "GND" V 2005 1122 50  0000 R CNN
+F 2 "" H 2000 1250 50  0001 C CNN
+F 3 "" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6176A224
+P 2000 1350
+F 0 "#PWR?" H 2000 1200 50  0001 C CNN
+F 1 "+5V" V 2015 1478 50  0000 L CNN
+F 2 "" H 2000 1350 50  0001 C CNN
+F 3 "" H 2000 1350 50  0001 C CNN
+	1    2000 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1150 2650 1150
+Wire Wire Line
+	2650 1150 2650 1700
+Wire Wire Line
+	2650 1700 5100 1700
+Wire Wire Line
+	5100 1700 5100 1650
+Wire Wire Line
+	2000 1050 2800 1050
+Wire Wire Line
+	2800 1050 2800 1350
+Wire Wire Line
+	2800 1350 5100 1350
+Wire Wire Line
+	2000 850  3000 850 
+Wire Wire Line
+	3000 850  3000 1250
+Wire Wire Line
+	3000 1250 5100 1250
+Wire Wire Line
+	2000 750  3450 750 
+Wire Wire Line
+	3450 750  3450 1150
+Wire Wire Line
+	3450 1150 5100 1150
+Wire Wire Line
+	6850 5650 6850 4450
+Wire Wire Line
+	8000 4950 7050 4950
+Wire Wire Line
+	7050 4050 7050 4950
+Connection ~ 7050 4950
+Wire Wire Line
+	7050 4950 7050 5950
+Wire Wire Line
+	8000 5050 7250 5050
+Connection ~ 7250 5050
+Wire Wire Line
+	7250 5050 7250 5850
 $EndSCHEMATC
