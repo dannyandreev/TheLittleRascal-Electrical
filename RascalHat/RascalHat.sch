@@ -866,8 +866,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 2850 4900 2850
 Wire Wire Line
-	7250 3950 7250 5050
-Wire Wire Line
 	850  4700 4400 4700
 Wire Wire Line
 	4400 4700 4400 5650
@@ -1599,17 +1597,6 @@ F 3 "~" H 1800 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Sensor_Motion:MPU-6050 U?
-U 1 1 6175D5AD
-P 8700 5250
-F 0 "U?" H 8700 4461 50  0000 C CNN
-F 1 "MPU-6050" H 8700 4370 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 8700 4450 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 8700 5100 50  0001 C CNN
-	1    8700 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 617691CA
 P 2000 1250
@@ -1660,15 +1647,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 5650 6850 4450
 Wire Wire Line
-	8000 4950 7050 4950
+	7050 4050 7050 5950
 Wire Wire Line
-	7050 4050 7050 4950
-Connection ~ 7050 4950
-Wire Wire Line
-	7050 4950 7050 5950
-Wire Wire Line
-	8000 5050 7250 5050
-Connection ~ 7250 5050
-Wire Wire Line
-	7250 5050 7250 5850
+	7250 3950 7250 5850
 $EndSCHEMATC
