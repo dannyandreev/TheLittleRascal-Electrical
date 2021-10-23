@@ -257,17 +257,6 @@ F 3 "" H 1250 3500 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 6148974E
-P 8500 2000
-F 0 "#PWR?" H 8500 1750 50  0001 C CNN
-F 1 "GND" H 8505 1827 50  0000 C CNN
-F 2 "" H 8500 2000 50  0001 C CNN
-F 3 "" H 8500 2000 50  0001 C CNN
-	1    8500 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 61489C6E
 P 8450 3550
 F 0 "#PWR?" H 8450 3300 50  0001 C CNN
@@ -454,28 +443,6 @@ F 3 "~" H 10500 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:LM5166Y B1
-U 1 1 613EF651
-P 8400 1500
-F 0 "B1" H 8400 2067 50  0000 C CNN
-F 1 "LM5166Y" H 8400 1976 50  0000 C CNN
-F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 8450 1050 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm5166.pdf" H 8400 2050 50  0001 C CNN
-	1    8400 1500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 614DAE78
-P 8000 1400
-F 0 "#PWR?" H 8000 1250 50  0001 C CNN
-F 1 "+5V" H 8015 1573 50  0000 C CNN
-F 2 "" H 8000 1400 50  0001 C CNN
-F 3 "" H 8000 1400 50  0001 C CNN
-	1    8000 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 614DB584
 P 7950 2950
@@ -488,17 +455,6 @@ F 3 "" H 7950 2950 50  0001 C CNN
 $EndComp
 $Comp
 L pspice:INDUCTOR L?
-U 1 1 614F1461
-P 7750 1200
-F 0 "L?" H 7750 1415 50  0000 C CNN
-F 1 "INDUCTOR" H 7750 1324 50  0000 C CNN
-F 2 "" H 7750 1200 50  0001 C CNN
-F 3 "~" H 7750 1200 50  0001 C CNN
-	1    7750 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:INDUCTOR L?
 U 1 1 614F1B14
 P 7700 2750
 F 0 "L?" H 7700 2965 50  0000 C CNN
@@ -506,28 +462,6 @@ F 1 "INDUCTOR" H 7700 2874 50  0000 C CNN
 F 2 "" H 7700 2750 50  0001 C CNN
 F 3 "~" H 7700 2750 50  0001 C CNN
 	1    7700 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C?
-U 1 1 614F3392
-P 9350 1450
-F 0 "C?" H 9528 1496 50  0000 L CNN
-F 1 "CAP" H 9528 1405 50  0000 L CNN
-F 2 "" H 9350 1450 50  0001 C CNN
-F 3 "~" H 9350 1450 50  0001 C CNN
-	1    9350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 614F44CA
-P 9350 1700
-F 0 "#PWR?" H 9350 1450 50  0001 C CNN
-F 1 "GND" H 9355 1527 50  0000 C CNN
-F 2 "" H 9350 1700 50  0001 C CNN
-F 3 "" H 9350 1700 50  0001 C CNN
-	1    9350 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -565,28 +499,6 @@ F 3 "~" H 8900 3350 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 61521CF6
-P 8950 1800
-F 0 "R?" V 8743 1800 50  0000 C CNN
-F 1 "R" V 8834 1800 50  0000 C CNN
-F 2 "" V 8880 1800 50  0001 C CNN
-F 3 "~" H 8950 1800 50  0001 C CNN
-	1    8950 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61531CC6
-P 7500 1550
-F 0 "R?" H 7570 1596 50  0000 L CNN
-F 1 "R" H 7570 1505 50  0000 L CNN
-F 2 "" V 7430 1550 50  0001 C CNN
-F 3 "~" H 7500 1550 50  0001 C CNN
-	1    7500 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 61532971
 P 7450 2600
 F 0 "R?" H 7520 2646 50  0000 R TNN
@@ -608,17 +520,6 @@ F 3 "~" H 7450 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:CAP C?
-U 1 1 61537498
-P 7250 1700
-F 0 "C?" H 7428 1746 50  0000 L CNN
-F 1 "CAP" H 7428 1655 50  0000 L CNN
-F 2 "" H 7250 1700 50  0001 C CNN
-F 3 "~" H 7250 1700 50  0001 C CNN
-	1    7250 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6153A57A
 P 7450 1950
@@ -628,17 +529,6 @@ F 2 "" H 7450 1950 50  0001 C CNN
 F 3 "" H 7450 1950 50  0001 C CNN
 	1    7450 1950
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6153AB70
-P 7000 1700
-F 0 "#PWR?" H 7000 1450 50  0001 C CNN
-F 1 "GND" H 7005 1527 50  0000 C CNN
-F 2 "" H 7000 1700 50  0001 C CNN
-F 3 "" H 7000 1700 50  0001 C CNN
-	1    7000 1700
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 G1
@@ -902,8 +792,6 @@ Wire Wire Line
 Wire Wire Line
 	9550 600  9550 1200
 Wire Wire Line
-	9550 1200 9350 1200
-Wire Wire Line
 	10300 1050 9900 1050
 Wire Wire Line
 	9900 1050 9900 1200
@@ -944,22 +832,12 @@ Wire Wire Line
 Wire Wire Line
 	6550 1250 6300 1250
 Wire Wire Line
-	8800 1300 9200 1300
-Wire Wire Line
-	9200 1300 9200 1200
-Connection ~ 9200 1200
-Wire Wire Line
-	9200 1200 8800 1200
-Wire Wire Line
 	8750 2850 9200 2850
 Wire Wire Line
 	9200 2850 9200 2750
 Connection ~ 9200 2750
 Wire Wire Line
 	9200 2750 9350 2750
-Connection ~ 9350 1200
-Wire Wire Line
-	9350 1200 9200 1200
 Connection ~ 9350 2750
 Wire Wire Line
 	9350 2750 9550 2750
@@ -968,11 +846,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 2950 7450 2750
 Connection ~ 7950 2950
-Wire Wire Line
-	8000 1400 7500 1400
-Wire Wire Line
-	7500 1400 7500 1200
-Connection ~ 8000 1400
 Wire Wire Line
 	9050 3150 9050 3350
 Connection ~ 8450 3550
@@ -985,16 +858,6 @@ Wire Wire Line
 Connection ~ 8700 3550
 Wire Wire Line
 	8700 3550 8450 3550
-Wire Wire Line
-	8000 1700 8000 2250
-Wire Wire Line
-	8000 2250 8700 2250
-Wire Wire Line
-	8700 2000 8500 2000
-Wire Wire Line
-	8700 2000 8700 2250
-Connection ~ 8500 2000
-Connection ~ 8700 2000
 Connection ~ 9050 3350
 Wire Wire Line
 	9050 3350 9050 3550
@@ -1002,16 +865,6 @@ Wire Wire Line
 	8700 3550 9050 3550
 Wire Wire Line
 	8750 3150 9050 3150
-Wire Wire Line
-	8800 1600 9100 1600
-Wire Wire Line
-	8700 2000 9100 2000
-Wire Wire Line
-	9100 1600 9100 1800
-Connection ~ 9100 1800
-Wire Wire Line
-	9100 1800 9100 2000
-Connection ~ 7500 1400
 Wire Wire Line
 	3750 2850 3750 4450
 Wire Wire Line
@@ -1673,6 +1526,39 @@ F 1 "+5V" H 2165 6823 50  0000 C CNN
 F 2 "" H 2150 6650 50  0001 C CNN
 F 3 "" H 2150 6650 50  0001 C CNN
 	1    2150 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 PWR
+U 1 1 615C23C6
+P 10500 2250
+F 0 "PWR" H 10580 2242 50  0000 L CNN
+F 1 "Conn_01x02" H 10580 2151 50  0000 L CNN
+F 2 "" H 10500 2250 50  0001 C CNN
+F 3 "~" H 10500 2250 50  0001 C CNN
+	1    10500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615C2CAF
+P 10300 2350
+F 0 "#PWR?" H 10300 2100 50  0001 C CNN
+F 1 "GND" H 10305 2177 50  0000 C CNN
+F 2 "" H 10300 2350 50  0001 C CNN
+F 3 "" H 10300 2350 50  0001 C CNN
+	1    10300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615D497E
+P 10300 2250
+F 0 "#PWR?" H 10300 2100 50  0001 C CNN
+F 1 "+5V" H 10315 2423 50  0000 C CNN
+F 2 "" H 10300 2250 50  0001 C CNN
+F 3 "" H 10300 2250 50  0001 C CNN
+	1    10300 2250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
