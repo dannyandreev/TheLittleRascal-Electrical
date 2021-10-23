@@ -1541,6 +1541,7 @@ F 3 "" H 10300 2250 50  0001 C CNN
 	1    10300 2250
 	1    0    0    -1  
 $EndComp
+<<<<<<< HEAD
 $Comp
 L power:GND #PWR?
 U 1 1 616F5E45
@@ -1722,4 +1723,7 @@ Wire Wire Line
 	750  1350 750  1700
 Wire Wire Line
 	750  1700 5100 1700
+=======
+
+>>>>>>> f8d4460829093dce0c92ffaba0dc94932310646a
 $EndSCHEMATC

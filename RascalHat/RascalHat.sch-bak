@@ -1508,6 +1508,7 @@ F 3 "" H 2150 6650 50  0001 C CNN
 	1    2150 6650
 	1    0    0    -1  
 $EndComp
+<<<<<<< HEAD
 $Comp
 L Connector_Generic:Conn_01x02 PWR
 U 1 1 615C23C6
@@ -1650,4 +1651,6 @@ Wire Wire Line
 	7050 4050 7050 5950
 Wire Wire Line
 	7250 3950 7250 5850
+=======
+>>>>>>> f8d4460829093dce0c92ffaba0dc94932310646a
 $EndSCHEMATC
