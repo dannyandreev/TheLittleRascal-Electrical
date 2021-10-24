@@ -599,17 +599,6 @@ F 3 "~" H 3950 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0102
-U 1 1 61796CD0
-P 2600 5450
-F 0 "#PWR0102" H 2600 5200 50  0001 C CNN
-F 1 "GND" H 2605 5277 50  0000 C CNN
-F 2 "" H 2600 5450 50  0001 C CNN
-F 3 "" H 2600 5450 50  0001 C CNN
-	1    2600 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 61796CCA
 P 2600 5350
@@ -618,17 +607,6 @@ F 1 "MountingHole_Pad" H 2700 5308 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3mm" H 2600 5350 50  0001 C CNN
 F 3 "~" H 2600 5350 50  0001 C CNN
 	1    2600 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 61796CC4
-P 2600 5000
-F 0 "#PWR0103" H 2600 4750 50  0001 C CNN
-F 1 "GND" H 2605 4827 50  0000 C CNN
-F 2 "" H 2600 5000 50  0001 C CNN
-F 3 "" H 2600 5000 50  0001 C CNN
-	1    2600 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -643,17 +621,6 @@ F 3 "~" H 2600 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
-U 1 1 6179452E
-P 2600 4550
-F 0 "#PWR0104" H 2600 4300 50  0001 C CNN
-F 1 "GND" H 2605 4377 50  0000 C CNN
-F 2 "" H 2600 4550 50  0001 C CNN
-F 3 "" H 2600 4550 50  0001 C CNN
-	1    2600 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 61794528
 P 2600 4450
@@ -662,17 +629,6 @@ F 1 "MountingHole_Pad" H 2700 4408 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3mm" H 2600 4450 50  0001 C CNN
 F 3 "~" H 2600 4450 50  0001 C CNN
 	1    2600 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 61792FE9
-P 2600 4100
-F 0 "#PWR0105" H 2600 3850 50  0001 C CNN
-F 1 "GND" H 2605 3927 50  0000 C CNN
-F 2 "" H 2600 4100 50  0001 C CNN
-F 3 "" H 2600 4100 50  0001 C CNN
-	1    2600 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -686,4 +642,10 @@ F 3 "~" H 2600 4000 50  0001 C CNN
 	1    2600 4000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2600 4100
+NoConn ~ 2600 4550
+NoConn ~ 2600 5000
+NoConn ~ 2600 5450
+NoConn ~ 3100 7050
+NoConn ~ 2450 4850
 $EndSCHEMATC
