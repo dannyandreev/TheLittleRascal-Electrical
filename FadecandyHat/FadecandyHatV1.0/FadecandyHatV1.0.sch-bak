@@ -497,13 +497,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J11
 U 1 1 6172EB8F
-P 5750 3750
-F 0 "J11" H 5800 4267 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 5800 4176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 5750 3750 50  0001 C CNN
-F 3 "~" H 5750 3750 50  0001 C CNN
-	1    5750 3750
-	1    0    0    -1  
+P 5850 3750
+F 0 "J11" H 5900 4267 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 5900 4176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 5850 3750 50  0001 C CNN
+F 3 "~" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5550 3450 5450 3450
