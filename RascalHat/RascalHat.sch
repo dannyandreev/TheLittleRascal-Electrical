@@ -595,7 +595,7 @@ Text Notes 1400 4100 0    50   ~ 0
 Radio Receiver
 Text Notes 1650 4550 0    50   ~ 0
 Speed Controller
-Text Notes 1500 5000 0    50   ~ 0
+Text Notes 1450 5150 0    50   ~ 0
 AS5600 Magnetic Encoder
 $Sheet
 S 1400 6850 550  700 
