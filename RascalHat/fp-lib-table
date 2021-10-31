@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RascalHat)(type KiCad)(uri "F:/Projects/TheLittleRascal/TheLittleRascal-Electrical/KiCAD LIB/RascalHat.pretty")(options "")(descr ""))
+)
