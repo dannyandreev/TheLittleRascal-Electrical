@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -33,7 +33,7 @@ U 1 1 6183942C
 P 5500 3500
 F 0 "J1" H 5472 3474 50  0000 R CNN
 F 1 "Conn_01x08_Male" H 5472 3383 50  0000 R CNN
-F 2 "" H 5500 3500 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 5500 3500 50  0001 C CNN
 F 3 "~" H 5500 3500 50  0001 C CNN
 	1    5500 3500
 	-1   0    0    -1  
