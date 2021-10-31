@@ -398,7 +398,6 @@ Wire Wire Line
 Connection ~ 5650 5050
 Wire Wire Line
 	5650 5050 5700 5050
-NoConn ~ 8450 5300
 Wire Wire Line
 	3800 6500 3900 6500
 Wire Wire Line
@@ -542,12 +541,12 @@ S 550  2800 600  800
 U 6184E358
 F0 "Radio Receiver" 50
 F1 "Radio Receiver.sch" 50
-F2 "CH1_Analog" I R 1150 3050 50 
-F3 "CH2_Analog" I R 1150 3150 50 
-F4 "CH3_Analog" I R 1150 3250 50 
-F5 "CH4_Analog" I R 1150 3350 50 
-F6 "5V" I R 1150 2900 50 
-F7 "GND" I R 1150 3500 50 
+F2 "5V" I R 1150 2900 50 
+F3 "GND" I R 1150 3500 50 
+F4 "CH1_PWM" I R 1150 3050 50 
+F5 "CH2_PWM" I R 1150 3150 50 
+F6 "CH3_PWM" I R 1150 3250 50 
+F7 "CH4_PWM" I R 1150 3350 50 
 $EndSheet
 Wire Wire Line
 	1150 2900 1250 2900
@@ -709,7 +708,7 @@ U 1 1 619233B1
 P 3400 1700
 F 0 "J2" H 3372 1724 50  0000 R CNN
 F 1 "Conn_01x09_Male" H 3372 1633 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B9B-EH-A_1x09_P2.50mm_Vertical" H 3400 1700 50  0001 C CNN
+F 2 "RascalHat:SIM808-Module" H 3400 1700 50  0001 C CNN
 F 3 "~" H 3400 1700 50  0001 C CNN
 	1    3400 1700
 	1    0    0    -1  
@@ -791,66 +790,47 @@ Text GLabel 2600 3450 0    50   Input ~ 0
 B7
 Text GLabel 2600 3550 0    50   Input ~ 0
 B8
-Text GLabel 1100 5650 2    50   Input ~ 0
-B3
-Text GLabel 1100 5750 2    50   Input ~ 0
-B4
-Text GLabel 1100 5850 2    50   Input ~ 0
-B5
-Text GLabel 1100 5950 2    50   Input ~ 0
-B6
-Text GLabel 1100 6050 2    50   Input ~ 0
+Text GLabel 1750 4050 2    50   Input ~ 0
 B7
-Text GLabel 1100 6150 2    50   Input ~ 0
+Text GLabel 1750 4150 2    50   Input ~ 0
 B8
-$Comp
-L Connector:Conn_01x08_Male J4
-U 1 1 6195E622
-P 900 5950
-F 0 "J4" H 872 5832 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 872 5923 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 900 5950 50  0001 C CNN
-F 3 "~" H 900 5950 50  0001 C CNN
-	1    900  5950
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	1100 5550 1200 5550
+	1750 3950 1850 3950
 Wire Wire Line
-	1200 5550 1200 5450
+	1850 3950 1850 3850
 $Comp
 L power:+5V #PWR028
 U 1 1 619647F9
-P 1200 5450
-F 0 "#PWR028" H 1200 5300 50  0001 C CNN
-F 1 "+5V" H 1215 5623 50  0000 C CNN
-F 2 "" H 1200 5450 50  0001 C CNN
-F 3 "" H 1200 5450 50  0001 C CNN
-	1    1200 5450
+P 1850 3850
+F 0 "#PWR028" H 1850 3700 50  0001 C CNN
+F 1 "+5V" H 1865 4023 50  0000 C CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR043
 U 1 1 6196533F
-P 1200 6350
-F 0 "#PWR043" H 1200 6100 50  0001 C CNN
-F 1 "GND" H 1205 6177 50  0000 C CNN
-F 2 "" H 1200 6350 50  0001 C CNN
-F 3 "" H 1200 6350 50  0001 C CNN
-	1    1200 6350
+P 1850 4350
+F 0 "#PWR043" H 1850 4100 50  0001 C CNN
+F 1 "GND" H 1855 4177 50  0000 C CNN
+F 2 "" H 1850 4350 50  0001 C CNN
+F 3 "" H 1850 4350 50  0001 C CNN
+	1    1850 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 6350 1200 6250
+	1850 4350 1850 4250
 Wire Wire Line
-	1200 6250 1100 6250
+	1850 4250 1750 4250
 Text GLabel 6500 2850 2    50   Input ~ 0
 GPIO0
 Text GLabel 6500 2950 2    50   Input ~ 0
 GPIO1
-Text GLabel 1200 1200 0    50   Input ~ 0
+Text GLabel 4150 3700 0    50   Input ~ 0
 GPIO0
-Text GLabel 1200 1300 0    50   Input ~ 0
+Text GLabel 4150 3800 0    50   Input ~ 0
 GPIO1
 Wire Wire Line
 	8450 3300 8200 3300
@@ -867,36 +847,6 @@ F 3 "" H 8200 3200 50  0001 C CNN
 	1    8200 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1200 1100 1100 1100
-Wire Wire Line
-	1100 1100 1100 1000
-$Comp
-L power:+5V #PWR04
-U 1 1 61A2CC7D
-P 1100 1000
-F 0 "#PWR04" H 1100 850 50  0001 C CNN
-F 1 "+5V" H 1115 1173 50  0000 C CNN
-F 2 "" H 1100 1000 50  0001 C CNN
-F 3 "" H 1100 1000 50  0001 C CNN
-	1    1100 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 61A2D960
-P 1100 1500
-F 0 "#PWR07" H 1100 1250 50  0001 C CNN
-F 1 "GND" H 1105 1327 50  0000 C CNN
-F 2 "" H 1100 1500 50  0001 C CNN
-F 3 "" H 1100 1500 50  0001 C CNN
-	1    1100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1500 1100 1400
-Wire Wire Line
-	1100 1400 1200 1400
 $Sheet
 S 3250 5900 550  1700
 U 6190B6D7
@@ -993,14 +943,6 @@ F 3 "" H 3200 5400 50  0001 C CNN
 	1    3200 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 3150 0    50   Input ~ 0
-A3
-Text GLabel 4900 3550 0    50   Input ~ 0
-A4
-Text GLabel 4900 3650 0    50   Input ~ 0
-A5
-Text GLabel 4900 3750 0    50   Input ~ 0
-A6
 Text GLabel 4900 4350 0    50   Input ~ 0
 A7
 Text GLabel 4900 4450 0    50   Input ~ 0
@@ -1038,17 +980,6 @@ F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 1500 2000 50  0001 C
 F 3 "~" H 1500 2000 50  0001 C CNN
 	1    1500 2000
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 61B7022F
-P 1400 1200
-F 0 "J3" H 1372 1174 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 1372 1083 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 1400 1200 50  0001 C CNN
-F 3 "~" H 1400 1200 50  0001 C CNN
-	1    1400 1200
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J11
@@ -1371,27 +1302,16 @@ Wire Wire Line
 Wire Wire Line
 	3450 -850 4750 -850
 $Comp
-L Connector:Conn_01x08_Male J5
-U 1 1 61C838FA
-P 2900 6200
-F 0 "J5" H 2872 6082 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 2872 6173 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 2900 6200 50  0001 C CNN
-F 3 "~" H 2900 6200 50  0001 C CNN
-	1    2900 6200
-	1    0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x07_Male J?
 U 1 1 61CD4885
-P 2900 6900
+P 2900 6800
 AR Path="/61755993/61CD4885" Ref="J?"  Part="1" 
 AR Path="/61CD4885" Ref="J13"  Part="1" 
-F 0 "J13" H 3008 7381 50  0000 C CNN
-F 1 "Conn_01x07_Male" H 3008 7290 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical" H 2900 6900 50  0001 C CNN
-F 3 "~" H 2900 6900 50  0001 C CNN
-	1    2900 6900
+F 0 "J13" H 3008 7281 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 3008 7190 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical" H 2900 6800 50  0001 C CNN
+F 3 "~" H 2900 6800 50  0001 C CNN
+	1    2900 6800
 	1    0    0    -1  
 $EndComp
 Text GLabel 3250 7300 0    50   Input ~ 0
@@ -1494,4 +1414,84 @@ F 3 "~" H 5050 7600 50  0001 C CNN
 	1    5050 7600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 61D4ADFC
+P 1550 4050
+F 0 "J4" H 1658 4331 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1658 4240 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 1550 4050 50  0001 C CNN
+F 3 "~" H 1550 4050 50  0001 C CNN
+	1    1550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 61D6F312
+P 9200 2000
+AR Path="/61D6F312" Ref="C6"  Part="1" 
+AR Path="/6184E358/61D6F312" Ref="C?"  Part="1" 
+F 0 "C6" H 9315 2046 50  0000 L CNN
+F 1 "0.1uF" H 9315 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9238 1850 50  0001 C CNN
+F 3 "~" H 9200 2000 50  0001 C CNN
+	1    9200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1800 9200 1800
+Wire Wire Line
+	9200 1800 9200 1850
+Connection ~ 8800 1800
+Wire Wire Line
+	9200 2150 9200 2250
+$Comp
+L power:GND #PWR0116
+U 1 1 61D7A7A3
+P 9200 2250
+F 0 "#PWR0116" H 9200 2000 50  0001 C CNN
+F 1 "GND" H 9205 2077 50  0000 C CNN
+F 2 "" H 9200 2250 50  0001 C CNN
+F 3 "" H 9200 2250 50  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J?
+U 1 1 61D8F3A7
+P 2900 6100
+AR Path="/61755993/61D8F3A7" Ref="J?"  Part="1" 
+AR Path="/61D8F3A7" Ref="J5"  Part="1" 
+F 0 "J5" H 3008 6581 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 3008 6490 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical" H 2900 6100 50  0001 C CNN
+F 3 "~" H 2900 6100 50  0001 C CNN
+	1    2900 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 7200
+Text GLabel 4800 6200 0    50   Input ~ 0
+PWM_Fan
+NoConn ~ 4800 6200
+Text GLabel 4900 3150 0    50   Input ~ 0
+GPIO16
+Text GLabel 4900 3550 0    50   Input ~ 0
+GPIO19
+Text GLabel 4900 3650 0    50   Input ~ 0
+GPIO20
+Text GLabel 4900 3750 0    50   Input ~ 0
+GPIO21
+Text GLabel 4150 4000 0    50   Input ~ 0
+GPIO19
+Text GLabel 4150 4100 0    50   Input ~ 0
+GPIO20
+Text GLabel 8450 5300 0    50   Input ~ 0
+GPIO21
+Text GLabel 4150 3900 0    50   Input ~ 0
+GPIO16
+NoConn ~ 4150 3700
+NoConn ~ 4150 3800
+NoConn ~ 4150 3900
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
 $EndSCHEMATC

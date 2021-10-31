@@ -1,4 +1,4 @@
-16488403419287817
+16498217592991168
 7447709330
 WE-PD_1260%2f1245%2f1280%2f121054
 WE-PD_1260/1245/1280/121054
@@ -65394,6 +65394,34 @@ MP1584-Jacobs-Parts-Module
 4
 4
 RascalHat
+MPU-6050-Module
+
+
+0
+8
+8
+RascalHat
+SIM808-Module
+
+
+0
+9
+9
+RascalHat
+XT30U-F-Horizontal
+
+
+0
+4
+2
+RascalHat
+XT30U-M-Horizontal
+
+
+0
+4
+2
+RascalHat
 XT60-F
 
 
@@ -65401,11 +65429,25 @@ XT60-F
 2
 2
 RascalHat
+XT60-F-Horizontal
+
+
+0
+4
+2
+RascalHat
 XT60-M
 
 
 0
 2
+2
+RascalHat
+XT60-M-Horizontal
+
+
+0
+4
 2
 Relay_SMD
 Relay_DPDT_AXICOM_IMSeries_JLeg

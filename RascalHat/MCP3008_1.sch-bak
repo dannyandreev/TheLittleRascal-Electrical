@@ -191,7 +191,7 @@ U 1 1 61C957E4
 P 6950 3700
 F 0 "U2" H 7444 3703 60  0000 L CNN
 F 1 "MCP3008-I_P" H 7444 3597 60  0000 L CNN
-F 2 "digikey-footprints:DIP-16_W7.62mm" H 7150 3900 60  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7150 3900 60  0001 L CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011593" H 7150 4000 60  0001 L CNN
 F 4 "MCP3008-I/P-ND" H 7150 4100 60  0001 L CNN "Digi-Key_PN"
 F 5 "MCP3008-I/P" H 7150 4200 60  0001 L CNN "MPN"
@@ -246,7 +246,7 @@ U 1 1 61CAF9AE
 P 6000 5850
 F 0 "U1" H 6494 5853 60  0000 L CNN
 F 1 "MCP3008-I_P" H 6494 5747 60  0000 L CNN
-F 2 "digikey-footprints:DIP-16_W7.62mm" H 6200 6050 60  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6200 6050 60  0001 L CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011593" H 6200 6150 60  0001 L CNN
 F 4 "MCP3008-I/P-ND" H 6200 6250 60  0001 L CNN "Digi-Key_PN"
 F 5 "MCP3008-I/P" H 6200 6350 60  0001 L CNN "MPN"
@@ -294,4 +294,6 @@ Wire Wire Line
 	5150 6400 5150 6450
 Wire Wire Line
 	5150 6450 5550 6450
+Text HLabel 6950 3000 2    50   Input ~ 0
+3V3
 $EndSCHEMATC

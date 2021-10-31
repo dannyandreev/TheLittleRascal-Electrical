@@ -73,7 +73,7 @@ AR Path="/61AC858D/618E8C80" Ref="U?"  Part="1"
 AR Path="/61BEE08A/618E8C80" Ref="U?"  Part="1" 
 F 0 "U5" H 4900 3200 60  0000 C CNN
 F 1 "TXB0108PWR" H 5650 3200 60  0000 C CNN
-F 2 "digikey-footprints:TSSOP-20_W4.4mm" H 5450 4150 60  0001 L CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5450 4150 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0108" H 5450 4250 60  0001 L CNN
 F 4 "296-21527-1-ND" H 5450 4350 60  0001 L CNN "Digi-Key_PN"
 F 5 "TXB0108PWR" H 5450 4450 60  0001 L CNN "MPN"
