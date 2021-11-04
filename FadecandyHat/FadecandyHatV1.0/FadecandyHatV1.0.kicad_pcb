@@ -2,8 +2,8 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
-    (tracks 78)
+    (drawings 18)
+    (tracks 81)
     (zones 0)
     (modules 17)
     (nets 15)
@@ -874,6 +874,9 @@
     )
   )
 
+  (gr_text "Fadecandy Hat V1.0" (at 20.64 11.5) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text 5V (at 6.985 16.51) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -903,6 +906,9 @@
   (gr_line (start -3 0.635) (end 41.1 0.635) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 34.885 19.391) (end 35.052 19.224) (width 1.5) (layer F.Cu) (net 1))
+  (via (at 31.22 11.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
+  (via (at 29.32 11.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
+  (via (at 31.63 21.34) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 6.985 10.4625) (end 6.985 12.3975) (width 0.5) (layer F.Cu) (net 2))
   (segment (start 11.559 5.969) (end 11.684 5.969) (width 0.5) (layer F.Cu) (net 3))
   (segment (start 10.209 4.619) (end 11.559 5.969) (width 0.5) (layer F.Cu) (net 3))
