@@ -1532,4 +1532,6 @@ F 3 "" H 6100 3250 50  0001 C CNN
 	1    6100 3250
 	1    0    0    -1  
 $EndComp
+Text Notes 10600 4100 0    50   ~ 0
+Change 3V3 dcdc footprint!!!
 $EndSCHEMATC
