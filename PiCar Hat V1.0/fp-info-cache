@@ -1,4 +1,4 @@
-19971494152772732
+19966533533488658
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57022,13 +57022,6 @@ Inductor
 2
 2
 LolomoloKiCADLib
-PCA9685
-
-
-0
-60
-60
-LolomoloKiCADLib
 PG-TDSON-8_1
 PG-TDSON-8_1
 MOSFET (N-Channel)
@@ -57280,13 +57273,6 @@ Integrated Circuit
 0
 20
 20
-MWSA0605S-150MT
-INDPM7066X500N
-0605S
-Inductor
-0
-2
-2
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -59842,13 +59828,6 @@ Mounting 4.5mm 9774100982
 0
 8
 1
-NTS0308EPWJ
-SOP65P640X110-20N
-SOT360-1
-Integrated Circuit
-0
-20
-20
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
