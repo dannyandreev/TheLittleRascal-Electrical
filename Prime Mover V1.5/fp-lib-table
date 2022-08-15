@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "RascalHat")(type "KiCad")(uri "F:/Projects/TheLittleRascal/TheLittleRascal-Electrical/KiCAD LIB/RascalHat.pretty")(options "")(descr ""))
+  (lib (name "MAX20404AFOC_VY+")(type "KiCad")(uri "F:/Lib/Kicad/MAX20404AFOC_VY+")(options "")(descr ""))
+  (lib (name "MWSA0605S-150MT")(type "KiCad")(uri "F:/Lib/Kicad/MWSA0605S-150MT")(options "")(descr ""))
+  (lib (name "NTS0308EPWJ")(type "KiCad")(uri "F:/Lib/Kicad/NTS0308EPWJ")(options "")(descr ""))
+)

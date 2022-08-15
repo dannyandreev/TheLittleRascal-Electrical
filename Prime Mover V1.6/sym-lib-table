@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "Rascal_KiCAD_LIB")(type "Legacy")(uri "F:/Projects/TheLittleRascal/TheLittleRascal-Electrical/KiCAD LIB/Rascal_KiCAD_LIB.lib")(options "")(descr ""))
+  (lib (name "NTS0308EPWJ")(type "Legacy")(uri "F:/Lib/Kicad/NTS0308EPWJ/NTS0308EPWJ.lib")(options "")(descr ""))
+  (lib (name "PrimeMoverLib")(type "KiCad")(uri "F:/Projects/TheLittleRascal/TheLittleRascal-Mechanical/Lib/KiCADLib/PrimeMoverLib.kicad_sym")(options "")(descr ""))
+  (lib (name "LolomoloKiCAD6SymLib")(type "KiCad")(uri "${KIPRJMOD}/LolomoloKiCAD6SymLib.kicad_sym")(options "")(descr ""))
+)
